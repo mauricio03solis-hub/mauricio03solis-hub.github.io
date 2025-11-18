@@ -1,5 +1,10 @@
 ---
 import Layout from '../layouts/BlogPost.astro';
+import robot from '../assets/upa.jpeg';
+import valle from '../assets/VB.jpeg';
+import hackath from '../assets/hack.jpeg';
+import desf from '../assets/desfile.jpeg';
+
 ---
 
 <Layout>
@@ -9,22 +14,25 @@ import Layout from '../layouts/BlogPost.astro';
 		<h2 style="font-size: 50px;">Momentos destacados</h2>
 		<div class="gallery-grid">
 			<div class="gallery-item">
-				<img src="./assets/upa.jpeg" alt="Descripción foto 1" />
+				<img src={robot.src} 
+				alt="UPA" />
 				<p class="gallery-description">Participación en concurso de robots destructor llevado a cabo en la Universidad Politécnica Atlacomulco</p>
 			</div>
 			
 			<div class="gallery-item">
-				<img src="./assets/VB.jpeg" alt="Descripción foto 2" />
+				<img src={valle.src} 
+				alt="TESVB" />
 				<p class="gallery-description">Participación en concurso de sumo de robots llevado a cabo en el Tecnológico de Estudios Superiores Valle de Bravo</p>
 			</div>
 			
 			<div class="gallery-item">
-				<img src="./assets/hack.jpeg" alt="Descripción foto 3" />
+				<img src={hackath.src} alt="Hackathon" />
 				<p class="gallery-description">Participación en el Hackathon realizado por la fundación Interledger en las instalaciones del CEFODEN</p>
 			</div>
 			
 			<div class="gallery-item">
-				<img src="./assets/desfile.jpeg" alt="Descripción foto 4" />
+				<img src={desf.src} 
+				alt="Desfile del 20 de septiembre" />
 				<p class="gallery-description">Participación en el desfile realizado el 19 de septiembre en conmemoración al aniversario de la independencia</p>
 			</div>
 		</div>
