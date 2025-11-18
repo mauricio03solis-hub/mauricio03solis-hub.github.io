@@ -85,7 +85,9 @@ a:hover {
 	color: var(--accent);
 }
 p {
+	text-align: justify;
 	margin-bottom: 1em;
+	font-size: 20px;
 }
 .prose p {
 	margin-bottom: 2em;
@@ -101,6 +103,7 @@ table {
 	width: 100%;
 }
 img {
+	width: 350px;
 	max-width: 100%;
 	height: auto;
 	border-radius: 8px;
@@ -153,3 +156,39 @@ hr {
 	/* added line to stop words getting smushed together (as they go onto separate lines and some screen readers do not understand line feeds as a space */
 	white-space: nowrap;
 }
+
+.boton {
+  display: block;         /* IMPORTANTE */
+  width: fit-content;     /* Para que no ocupe toda la línea */
+  padding: 12px 24px;
+  background-color: #2563eb;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+  margin: 20px auto;      /* CENTRADO */
+}
+
+
+.boton:hover {
+  background-color: #1e40af; /* Azul más oscuro */
+}
+
+.boton:active {
+  transform: scale(0.97); /* Efecto al presionar */
+}
+
+
+.im {
+  display: block;
+  margin: 0 auto;   /* Esto la centra horizontalmente */
+  width: 300px;     /* Opcional, si quieres control del tamaño */
+}
+
+.ti {
+  text-align: center;
+  font-size: 60px;
+  font-weight: bold;
+}
+
