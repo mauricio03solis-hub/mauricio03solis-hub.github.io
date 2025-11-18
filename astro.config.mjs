@@ -8,7 +8,12 @@ import tailwindcss from '@tailwindcss/vite';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://example.com',
+  // Cambiar site al URL de tu repositorio GitHub Pages
+  site: 'https://mauricio03solis-hub.github.io/',
+
+  // Importante: base path para GitHub Pages
+  base: '/',
+
   integrations: [mdx(), sitemap()],
 
   vite: {
