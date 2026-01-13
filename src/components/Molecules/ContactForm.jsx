@@ -36,7 +36,7 @@ export default function ContactForm() {
       return "El correo electrónico es obligatorio";
     }
     if (!emailRegex.test(email)) {
-      return "Ingresa un correo electrónico válido";
+      return "Ingresa tu correo electrónico válido";
     }
     return "";
   };
